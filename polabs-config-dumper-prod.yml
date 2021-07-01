@@ -7,16 +7,6 @@ path:
   - "system/network"
 
 sources:
-  - name: mock-local
-    ip:   127.0.0.1
-    port: 8080
-    env: DEBUG
-
-  - name: mock-bad
-    ip:   127.0.0.1
-    port: 80
-    env: DEBUG
-
   - name: test-1
     ip:   10.37.28.132
     port: 80
@@ -24,3 +14,7 @@ sources:
   - name: test-2
     ip:   10.37.28.10
     port: 80
+    
+  - name: test-3
+    ip:   10.37.28.133
+    port: 80    
