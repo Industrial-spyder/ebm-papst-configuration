@@ -1,0 +1,9 @@
+mapping:
+    - mac: 
+      ip:
+      pass:
+      role: PLB13P01
+    - mac: 
+      ip: 
+      pass:
+      role: PLB13P02
