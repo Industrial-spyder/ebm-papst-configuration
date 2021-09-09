@@ -13,12 +13,6 @@ path:
   - "system/sntp"
 
 sources:
-  - name: test-1
-    resource_id: test-1
-    source_id: PLB:10.37.28.132
-    ip:   10.37.28.132
-    port: 80
-
   - name: test-2
     resource_id: test-2
     source_id: PLB:10.37.28.10
