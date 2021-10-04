@@ -11,6 +11,7 @@ path:
   - "system/network"
   - "system/dns"
   - "system/sntp"
+  - "system/time"
 
 sources:
   - name: test-2
@@ -39,7 +40,6 @@ sources:
     
   - name: IS-PLB-84100013-P12
     resource_id: STA-8400-84100013-P12
-    source_id: PLB:10.37.28.132
-    ip:   10.37.28.132
+    source_id: PLB:10.37.28.134
+    ip:   10.37.28.134
     port: 80
- 
