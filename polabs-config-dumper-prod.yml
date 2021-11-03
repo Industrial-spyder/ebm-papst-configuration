@@ -26,10 +26,10 @@ sources:
     ip:   10.37.28.133
     port: 80
 
-  - name: test-1
-    resource_id: test-1
-    source_id: PLB:10.37.28.135
-    ip:   10.37.28.135
+  - name: z_fake
+    resource_id: z_fake
+    source_id: PLB:10.37.254.254
+    ip:   10.37.254.254
     port: 80
 
   - name: IS-PLB-84100013-P10
