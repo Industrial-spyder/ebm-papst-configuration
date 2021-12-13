@@ -1,1 +1,2 @@
-# ebm-papst-configuration
+# EBM-Papst Configuration
+
