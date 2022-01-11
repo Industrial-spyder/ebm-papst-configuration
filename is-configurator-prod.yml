@@ -44,14 +44,6 @@ controllers:
       host_port:  80
       resource_id: "STA-8400-84100013-P11"
 
-  - controller: IS-PLB-84100013-P12
-    config_template: polabs_templates/is-plb-84100001-x.yml.j2
-    specific_config: polabs_templates/is-plb-84100001-12.yml.j2
-    vars:
-      host_ip:   "10.37.28.135"
-      host_port:  80
-      resource_id: "STA-8400-84100013-P12"
-
   # 10.37.28.134	4c71.6750.0005		EM42-A	84100013	P12
   - controller: IS-PLB-84100013-P12
     config_template: polabs_templates/is-plb-84100001-x.yml.j2  
@@ -99,3 +91,12 @@ controllers:
       host_ip: "10.37.28.13"
       host_port:  80
       resource_id: "STA-8400-84100013-P8"
+
+  # 10.37.28.135	4c71.6750.002b		EM42-A	84100013	P7	sipod-b0sw2	Gi1/9
+  - controller: IS-PLB-84100013-P7
+    config_template: polabs_templates/is-plb-84100001-x.yml.j2  
+    vars:
+      host_ip: "10.37.28.135"
+      host_port:  80
+      resource_id: "STA-8400-84100013-P7"
+  
