@@ -49,3 +49,45 @@ sources:
     source_id: PLB:10.37.28.134
     ip:   10.37.28.134
     port: 80
+
+  # 10.37.28.15	4c71.6750.0022		EM42-A	84100013	P4	sipod-b0sw2	Gi1/7
+  - name: IS-PLB-84100013-P4
+    resource_id: STA-8400-84100013-P4
+    source_id: PLB:10.37.28.15
+    ip:   10.37.28.15
+    port: 80
+
+  # 10.37.28.14	4c71.6750.0028		EM42-A	84100013	P5	sipod-b0sw2	Gi1/8
+  - name: IS-PLB-84100013-P5
+    resource_id: STA-8400-84100013-P5
+    source_id: PLB:10.37.28.14
+    ip:   10.37.28.14
+    port: 80
+
+  # 10.37.28.135	4c71.6750.002b		EM42-A	84100013	P7	sipod-b0sw2	Gi1/9
+  - name: IS-PLB-84100013-P7
+    resource_id: STA-8400-84100013-P7
+    source_id: PLB:10.37.28.135
+    ip:   10.37.28.135
+    port: 80
+
+  # 1037.28.16	4c71.6750.0029		EM42-A	84100013	P3	sipod-b0sw2	Gi1/10
+  - name: IS-PLB-84100013-P3
+    resource_id: STA-8400-84100013-P3
+    source_id: PLB:10.37.28.16
+    ip:   10.37.28.16
+    port: 80
+
+  # 10.37.28.17	4c71.6750.0027		EM42-A	84100013	P1	sipod-b0sw2	Gi2/1
+  - name: IS-PLB-84100013-P1
+    resource_id: STA-8400-84100013-P1
+    source_id: PLB:10.37.28.17
+    ip:   10.37.28.17
+    port: 80
+
+  # 10.37.28.13	4c71.6750.002a		EM42-A	84100013	P8	sipod-b0sw2	Gi2/2
+  - name: IS-PLB-84100013-P8
+    resource_id: STA-8400-84100013-P8
+    source_id: PLB:10.37.28.13
+    ip:   10.37.28.13
+    port: 80
