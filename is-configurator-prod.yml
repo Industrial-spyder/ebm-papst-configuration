@@ -51,3 +51,51 @@ controllers:
       host_ip:   "10.37.28.135"
       host_port:  80
       resource_id: "STA-8400-84100013-P12"
+
+  # 10.37.28.134	4c71.6750.0005		EM42-A	84100013	P12
+  - controller: IS-PLB-84100013-P12
+    config_template: is-plb-84100001-x.yml.j2  
+    vars:
+      host_ip:  "10.37.28.134" 
+      host_port:  80
+      resource_id: "STA-8400-84100013-P12"
+
+  # 10.37.28.15	4c71.6750.0022		EM42-A	84100013	P4
+  - controller: IS-PLB-84100013-P4
+    config_template: is-plb-84100001-x.yml.j2  
+    vars:
+      host_ip: "10.37.28.15"  
+      host_port:  80
+      resource_id: "STA-8400-84100013-P4"
+
+  # 10.37.28.14	4c71.6750.0028		EM42-A	84100013	P5
+  - controller: IS-PLB-84100013-P5
+    config_template: is-plb-84100001-x.yml.j2  
+    vars:
+      host_ip:  "10.37.28.14"
+      host_port:  80
+      resource_id: "STA-8400-84100013-P5"
+
+  # 10.37.28.16	4c71.6750.0029		EM42-A	84100013	P3
+  - controller: IS-PLB-84100013-P3
+    config_template: is-plb-84100001-x.yml.j2  
+    vars:
+      host_ip:  "10.37.28.16"
+      host_port:  80
+      resource_id: "STA-8400-84100013-P3"
+
+  # 10.37.28.17	4c71.6750.0027		EM42-A	84100013	P1
+  - controller: IS-PLB-84100013-P1
+    config_template: is-plb-84100001-x.yml.j2  
+    vars:
+      host_ip: "10.37.28.17"
+      host_port:  80
+      resource_id: "STA-8400-84100013-P1"
+
+  # 10.37.28.13	4c71.6750.002a		EM42-A	84100013	P8
+  - controller: IS-PLB-84100013-P8
+    config_template: is-plb-84100001-x.yml.j2  
+    vars:
+      host_ip: "10.37.28.13"
+      host_port:  80
+      resource_id: "STA-8400-84100013-P8"
