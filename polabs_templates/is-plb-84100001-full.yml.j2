@@ -24,6 +24,7 @@ end_points:
     url: "http://{{host_ip}}:{{host_port}}/config/push?auth={{hash}}"
     method: "POST"
     payload: 
+      trg_type:  "{{push_trg_type}}"
       pckt_type: "{{push_pckt_type}}"
       {% if  push_pckt_type=="tcp" %}
       ip:   "{{push_tcp_ip}}"
