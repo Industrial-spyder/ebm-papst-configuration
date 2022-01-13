@@ -1,9 +1,9 @@
 vars:
-  push_pckt_type: "udp"
+  push_pckt_type: "tcp"
   push_trg_type:  "change"
-  push_tcp_ip:   "10.37.30.10"
+  push_tcp_ip:   "10.37.30.250"
   push_tcp_port: 5050
-  push_udp_ip:   "10.37.30.10"
+  push_udp_ip:   "10.37.30.250"
   push_udp_port: 5050 
   hash: 46e42b867f5573ffa950ac2bd2f31352c221b34b04eb7822ce81e386f882370b
   host_port:  80
