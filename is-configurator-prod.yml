@@ -1,11 +1,12 @@
 vars:
-  push_pckt_type: "tcp"
-  push_trg_type:  "change"
-  push_tcp_ip:   "10.37.30.250"
-  push_tcp_port: 5050
-  push_udp_ip:   "10.37.30.250"
-  push_udp_port: 5050 
+  push_pckt_type:  "tcp"
+  push_trg_type:   "change"
+  push_tcp_ip:     "10.37.30.250"
+  push_tcp_port:   5050
+  push_udp_ip:     "10.37.30.250"
+  push_udp_port:   5050 
   push_keep_alive: "0"
+  device_class:    "polabs"
   hash: 46e42b867f5573ffa950ac2bd2f31352c221b34b04eb7822ce81e386f882370b
   host_port:  80
   ni: 2
@@ -48,6 +49,7 @@ controllers:
   # 10.37.28.134	4c71.6750.0005		EM42-A	84100013	P12
   - controller: IS-PLB-84100013-P12
     config_template: is-plb-84100001-x.yml.j2
+    specific_config: is-plb-84100001-12.yml.j2
     vars:
       host_ip:  "10.37.28.134" 
       host_port:  80
@@ -56,6 +58,7 @@ controllers:
   # 10.37.28.15	4c71.6750.0022		EM42-A	84100013	P4
   - controller: IS-PLB-84100013-P4
     config_template: is-plb-84100001-x.yml.j2
+    specific_config: is-plb-84100001-4.yml.j2    
     vars:
       host_ip: "10.37.28.15"  
       host_port:  80
@@ -64,6 +67,7 @@ controllers:
   # 10.37.28.14	4c71.6750.0028		EM42-A	84100013	P5
   - controller: IS-PLB-84100013-P5
     config_template: is-plb-84100001-x.yml.j2
+    specific_config: is-plb-84100001-5.yml.j2
     vars:
       host_ip:  "10.37.28.14"
       host_port:  80
@@ -72,6 +76,7 @@ controllers:
   # 10.37.28.16	4c71.6750.0029		EM42-A	84100013	P3
   - controller: IS-PLB-84100013-P3
     config_template: is-plb-84100001-x.yml.j2
+    specific_config: is-plb-84100001-3.yml.j2
     vars:
       host_ip:  "10.37.28.16"
       host_port:  80
@@ -80,6 +85,7 @@ controllers:
   # 10.37.28.17	4c71.6750.0027		EM42-A	84100013	P1
   - controller: IS-PLB-84100013-P1
     config_template: is-plb-84100001-x.yml.j2
+    specific_config: is-plb-84100001-1.yml.j2
     vars:
       host_ip: "10.37.28.17"
       host_port:  80
@@ -88,6 +94,7 @@ controllers:
   # 10.37.28.13	4c71.6750.002a		EM42-A	84100013	P8
   - controller: IS-PLB-84100013-P8
     config_template: is-plb-84100001-x.yml.j2
+    specific_config: is-plb-84100001-8.yml.j2
     vars:
       host_ip: "10.37.28.13"
       host_port:  80
@@ -96,8 +103,8 @@ controllers:
   # 10.37.28.135	4c71.6750.002b		EM42-A	84100013	P7	sipod-b0sw2	Gi1/9
   - controller: IS-PLB-84100013-P7
     config_template: is-plb-84100001-x.yml.j2
+    specific_config: is-plb-84100001-7.yml.j2
     vars:
       host_ip: "10.37.28.135"
       host_port:  80
       resource_id: "STA-8400-84100013-P7"
-  

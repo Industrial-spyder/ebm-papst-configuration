@@ -1,11 +1,11 @@
-
 end_points:
   - name: "Metadata"
     url: "http://{{host_ip}}:{{host_port}}/meta?auth={{hash}}"
     method: "POST"
     payload: 
-      device_name: "{{ controller }}"
-      resource_id: "{{ resource_id }}"
+      device_name:  "{{ controller }}"
+      resource_id:  "{{ resource_id }}"
+      device_class: "{{ device_class }}"
 
   - name: "DNS"
     url: "http://{{host_ip}}:{{host_port}}/system/dns?auth={{hash}}"
