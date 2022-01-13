@@ -25,7 +25,7 @@ end_points:
     method: "POST"
     payload:
       trg_type: "{{push_trg_type}}"
-      keep_alive: "{{push_keep_alive}}"
+      keep_alive: {{push_keep_alive}}
       pckt_type: "{{push_pckt_type}}"
       {% if  push_pckt_type=="tcp" %}
       ip:   "{{push_tcp_ip}}"
