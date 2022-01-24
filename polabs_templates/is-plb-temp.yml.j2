@@ -20,16 +20,6 @@ end_points:
       enabled: 1
       hostnames: ["10.37.1.21", "10.37.1.22"]
 
-  - name: "PUSH"
-    url: "http://{{host_ip}}:{{host_port}}/config/push?auth={{hash}}"
-    method: "POST"
-    payload:
-      trg_type: "{{push_trg_type}}"
-      keep_alive: {{push_keep_alive}}
-      pckt_type: "tcp"
-      ip:   "10.37.30.10"
-      port: {{push_tcp_port}}
-
 after_actions:
   - name: "Saving config"
     method: "POST"
