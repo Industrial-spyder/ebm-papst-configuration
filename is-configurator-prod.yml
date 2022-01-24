@@ -20,14 +20,15 @@ controllers:
 
   - controller: PLB-Test-2
     config_template: is-plb-test.yml.j2
+    specific_config: is-plb-test-10.yml.j2
     vars:
       host_ip:   "10.37.28.10"
       resource_id: "PLB-Test-2"
       
   - controller: PLB-Test-3
     config_template: is-plb-test.yml.j2
-    vars: 
-      host_ip:   "10.37.28.133"      
+    vars:
+      host_ip:   "10.37.28.133"
       resource_id: "PLB-Test-3"
 
   - controller: IS-PLB-84100013-P10
