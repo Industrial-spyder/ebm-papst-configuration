@@ -92,20 +92,21 @@ controllers:
       host_port:  80
       resource_id: "STA-8400-84100013-P1"
 
-  # 10.37.28.13	4c71.6750.002a		EM42-A	84100013	P8
-  - controller: IS-PLB-84100013-P8
+  # 10.37.28.13	4c71.6750.002a		EM42-A	84100013	P8  
+  - controller: IS-PLB-84100013-P7
     config_template: is-plb-84100001-x.yml.j2
     specific_config: is-plb-84100001-8.yml.j2
     vars:
       host_ip: "10.37.28.13"
       host_port:  80
-      resource_id: "STA-8400-84100013-P8"
+      resource_id: "STA-8400-84100013-P7"
 
   # 10.37.28.135	4c71.6750.002b		EM42-A	84100013	P7	sipod-b0sw2	Gi1/9
-  - controller: IS-PLB-84100013-P7
+  # P8 in a constant alarm  
+  - controller: IS-PLB-84100013-P8
     config_template: is-plb-84100001-x.yml.j2
     specific_config: is-plb-84100001-7.yml.j2
     vars:
       host_ip: "10.37.28.135"
       host_port:  80
-      resource_id: "STA-8400-84100013-P7"
+      resource_id: "STA-8400-84100013-P8"
