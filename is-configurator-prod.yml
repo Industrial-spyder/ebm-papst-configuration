@@ -11,14 +11,14 @@ vars:
   host_port:  80
   ni: 2
 controllers:
-  - controller: PLB-Mock-1
+  - controller: z_fake
     config_template: is-plb-test.yml.j2
     vars:
       host_ip:   "localhost"
       host_port:  8080
       resource_id: "PLB-Mock-1"
 
-  - controller: PLB-Test-2
+  - controller: test-2
     config_template: is-plb-test.yml.j2
     specific_config: is-plb-test-10.yml.j2
     vars:
@@ -26,7 +26,7 @@ controllers:
       resource_id: "PLB-Test-2"
       source_id:   PLB:10.37.28.10
       
-  - controller: PLB-Test-3
+  - controller: test-3
     config_template: is-plb-test.yml.j2
     vars:
       host_ip:   "10.37.28.133"
