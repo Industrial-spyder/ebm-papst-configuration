@@ -35,7 +35,7 @@ controllers:
 
   - controller: IS-PLB-84100013-P10
     config_template: is-plb-84100001-x.yml.j2
-    specific_config: is-plb-84100001-11_10.yml.j2
+    specific_config: is-plb-84100001-10.yml.j2
     vars:
       host_ip:   "10.37.28.12"
       host_port:  80
@@ -44,7 +44,7 @@ controllers:
 
   - controller: IS-PLB-84100013-P11
     config_template: is-plb-84100001-x.yml.j2
-    specific_config: is-plb-84100001-11_10.yml.j2
+    specific_config: is-plb-84100001-11.yml.j2
     vars:
       host_ip:   "10.37.28.11"
       host_port:  80
