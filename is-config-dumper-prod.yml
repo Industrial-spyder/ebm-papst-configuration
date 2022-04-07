@@ -117,18 +117,16 @@ sources:
 
   # 4C:71:67:50:00:2D	EM42-B	84100008
   - name: IS-PLB-84100008
-    vars:
-      host_uid: 4C:71:67:50:00:2D
-      host_ip: 
-      host_port:  80
-      resource_id: "MCN-8400-84100008"
-      source_id:   "PLB:{{host_ip}}"
+    host_uid: 4C:71:67:50:00:2D
+    host_ip: 
+    host_port:  80
+    resource_id: "MCN-8400-84100008"
+    source_id:   "PLB:{{host_ip}}"
 
   # 4C:71:67:50:0D:1D		EM42-B	84100009
   - name: IS-PLB-84100009
-    vars:
-      host_uid: 4C:71:67:50:0D:1D
-      host_ip: 
-      host_port:  80
-      resource_id: "MCN-8400-84100009"
-      source_id:   "PLB:{{host_ip}}"
+    host_uid: 4C:71:67:50:0D:1D
+    host_ip:  10.37.28.19
+    host_port:  80
+    resource_id: "MCN-8400-84100009"
+    source_id:   "PLB:{{host_ip}}"
