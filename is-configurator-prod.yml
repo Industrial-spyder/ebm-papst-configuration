@@ -15,16 +15,17 @@ controllers:
   - controller: z_fake
     config_template: is-plb-test.yml.j2
     vars:
-      host_uid: ""
+      host_uid: "localhsot:8080"
       host_ip:   "localhost"
       host_port:  8080
       resource_id: "z_fake"
+      source_id:   "z_fake"
 
   - controller: test-2
     config_template: is-plb-test.yml.j2
     specific_config: is-plb-test-10.yml.j2
     vars:
-      host_uid: ""
+      host_uid: "4C:71:67:50:00:02"
       host_ip:     "10.37.28.10"
       resource_id: "test-2"
       source_id:   PLB:10.37.28.10
@@ -32,7 +33,7 @@ controllers:
   - controller: test-3
     config_template: is-plb-test.yml.j2
     vars:
-      host_uid: ""
+      host_uid: "4C:71:67:50:00:03"
       host_ip:   "10.37.28.133"
       resource_id: "test-3"
       source_id:   PLB:10.37.28.133
@@ -41,7 +42,7 @@ controllers:
     config_template: is-plb-84100001-x.yml.j2
     specific_config: is-plb-84100001-10.yml.j2
     vars:
-      host_uid: ""
+      host_uid: "4C:71:67:50:00:06"
       host_ip:   "10.37.28.12" 
       host_port:  80
       resource_id: "STA-8400-84100013-P10"
@@ -51,7 +52,7 @@ controllers:
     config_template: is-plb-84100001-x.yml.j2
     specific_config: is-plb-84100001-11.yml.j2
     vars:
-      host_uid: ""    
+      host_uid: "4C:71:67:50:00:08"    
       host_ip:   "10.37.28.11"
       host_port:  80
       resource_id: "STA-8400-84100013-P11"
