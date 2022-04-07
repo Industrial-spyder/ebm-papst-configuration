@@ -15,18 +15,21 @@ path:
 
 sources:
   - name: test-2
+    host_uid:  4C:71:67:50:00:02
     resource_id: test-2
     source_id: "PLB:{{host_ip}}"
     host_ip:   10.37.28.10
     host_port: 80
     
   - name: test-3
+    host_uid: 4C:71:67:50:00:03
     resource_id: test-3
     source_id: "PLB:{{host_ip}}"
     host_ip:   10.37.28.133
     host_port: 80
 
   - name: z_fake
+    host_uid: z_fake
     resource_id: z_fake
     source_id: "PLB:{{host_ip}}"
     host_ip:   10.37.254.254
