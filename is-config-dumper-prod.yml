@@ -80,7 +80,7 @@ sources:
     host_uid:    4C:71:67:50:00:2B
     resource_id: STA-8400-84100013-P7
     source_id: "PLB:{{host_ip}}"
-    host_ip:   10.37.28.135
+    host_ip:   10.37.28.132
     host_port: 80
 
   # 1037.28.16	4c71.6750.0029		EM42-A	84100013	P3	sipod-b0sw2	Gi1/10
@@ -129,4 +129,12 @@ sources:
     host_ip:  10.37.28.19
     host_port:  80
     resource_id: "MCN-8400-84100009"
+    source_id:   "PLB:{{host_ip}}"
+
+  # 4C:71:67:50:0D:1f		EM42-B	84100002
+  - name: IS-PLB-84100002
+    host_uid: 4C:71:67:50:0D:1F
+    host_ip:  10.37.28.135
+    host_port:  80
+    resource_id: "MCN-8400-84100002"
     source_id:   "PLB:{{host_ip}}"
