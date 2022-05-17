@@ -131,10 +131,10 @@ controllers:
     specific_config: is-plb-84100001-8.yml.j2
     vars:
       host_uid: "4C:71:67:50:00:2B"
-      host_ip: "10.37.28.135"
+      host_ip: "10.37.28.132"
       host_port:  80
       resource_id: "STA-8400-84100013-P8"
-      source_id:   PLB:10.37.28.135
+      source_id:   PLB:10.37.28.132
 
   # 4C:71:67:50:00:26		EM42-B	84100007
   - controller: IS-PLB-84100007
@@ -150,10 +150,10 @@ controllers:
   # 4C:71:67:50:00:2D	EM42-B	84100008
   - controller: IS-PLB-84100008
     config_template: is-plb-84100001-x.yml.j2
-    specific_config: is-plb-84100008.yml.j2
+#    specific_config: is-plb-84100008.yml.j2
     vars:
       host_uid: 4C:71:67:50:00:2D
-      host_ip: 
+      host_ip:  
       host_port:  80
       resource_id: "MCN-8400-84100008"
       source_id:   "PLB:{{host_ip}}"
@@ -167,4 +167,15 @@ controllers:
       host_ip:  10.37.28.19
       host_port:  80
       resource_id: "MCN-8400-84100009"
+      source_id:   "PLB:{{host_ip}}"
+
+  # 4C:71:67:50:00:1f		EM42-B	84100009
+  - controller: IS-PLB-84100002
+    config_template: is-plb-84100001-x.yml.j2
+#    specific_config: is-plb-84100002.yml.j2
+    vars:
+      host_uid: 4C:71:67:50:00:1f
+      host_ip:  10.37.28.135
+      host_port:  80
+      resource_id: "MCN-8400-84100002"
       source_id:   "PLB:{{host_ip}}"
