@@ -1,15 +1,16 @@
 mapping:
-    - { mac: 4C:71:67:50:00:27, ip:  10.37.28.17 }
-    - { mac: 4C:71:67:50:00:22, ip:  10.37.28.15 }
-    - { mac: 4C:71:67:50:00:29, ip:  10.37.28.16 }
-    - { mac: 4C:71:67:50:00:2A, ip:  10.37.28.18 }
-    - { mac: 4C:71:67:50:00:28, ip:  10.37.28.14 }
-    - { mac: 4C:71:67:50:00:2B, ip:  10.37.28.132 }
-    - { mac: 4C:71:67:50:00:1F, ip:  10.37.28.135 }
-    - { mac: 4C:71:67:50:00:02, ip:  10.37.28.10 }
-    - { mac: 4C:71:67:50:00:03, ip:  10.37.28.133 }
-    - { mac: 4C:71:67:50:00:06, ip:  10.37.28.12 }
-    - { mac: 4C:71:67:50:00:1D, ip:  10.37.28.19 }
-    - { mac: 4C:71:67:50:00:26, ip:  10.37.28.13 }
-    - { mac: 4C:71:67:50:00:05, ip:  10.37.28.134 }
-    - { mac: 4C:71:67:50:00:08, ip:  10.37.28.11 }
+    - { resource: test-2,                mac: 4C:71:67:50:00:02, class: polabs }
+    - { resource: test-3,                mac: 4C:71:67:50:00:03, class: polabs }
+    - { resource: STA-8400-84100013-P1,  mac: 4C:71:67:50:00:27, class: polabs }
+    - { resource: STA-8400-84100013-P3,  mac: 4C:71:67:50:00:29, class: polabs }
+    - { resource: STA-8400-84100013-P4,  mac: 4C:71:67:50:00:22, class: polabs }
+    - { resource: STA-8400-84100013-P5,  mac: 4C:71:67:50:00:28, class: polabs }
+    - { resource: STA-8400-84100013-P7,  mac: 4C:71:67:50:00:2B, class: polabs }
+    - { resource: STA-8400-84100013-P8,  mac: 4C:71:67:50:00:2A, class: polabs }
+    - { resource: STA-8400-84100013-P10, mac: 4C:71:67:50:00:06, class: polabs }
+    - { resource: STA-8400-84100013-P11, mac: 4C:71:67:50:00:08, class: polabs }
+    - { resource: STA-8400-84100013-P12, mac: 4C:71:67:50:00:05, class: polabs }
+    - { resource: STA-8400-84100002,     mac: 4C:71:67:50:00:1F, class: polabs }
+    - { resource: MCN-8400-84100007,     mac: 4C:71:67:50:00:26, class: polabs }
+    - { resource: MCN-8400-84100008,     mac: 4C:71:67:50:00:2D, class: polabs }
+    - { resource: MCN-8400-84100009,     mac: 4C:71:67:50:00:1D, class: polabs }
