@@ -1,0 +1,26 @@
+end_points:
+  - name: "Metadata"
+    url: "http://{{host_ip}}:{{host_port}}/meta?auth={{hash}}"
+    method: "POST"
+    payload: 
+      device_name:  "{{ controller }}"
+      resource_id:  "{{ resource_id }}"
+      device_class: "{{ device_class }}"
+
+  - name: "DNS"
+    url: "http://{{host_ip}}:{{host_port}}/system/dns?auth={{hash}}"
+    method: "POST"
+    payload:
+      addresses: ["10.37.1.21","10.37.1.22"]
+
+  - name: "SNTP"
+    url: "http://{{host_ip}}:{{host_port}}/system/sntp?auth={{hash}}"
+    method: "POST"
+    payload:
+      enabled: 1
+      hostnames: ["10.37.1.21", "10.37.1.22"]
+
+after_actions:
+  - name: "Saving config"
+    method: "POST"
+    url: "http://{{host_ip}}:{{host_port}}/config/save?auth={{hash}}"
